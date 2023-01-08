@@ -1,0 +1,18 @@
+{
+  "name": "formations-app",
+  "version": "1.0.0",
+  "main": "api.js",
+  "scripts": {
+    "start:api": "node api.js",
+    "watch:api": "nodemon api.js"
+  },
+  "author": "OCTO",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
