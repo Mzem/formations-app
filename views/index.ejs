@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Formations</title>
+  </head>
+  <body>
+    <h1>Hello !</h1>
+    <% if (user) { %>
+      <% if (user.email) { %>
+        <p>Utilisateur : <%= user.email %></p>
+      <% } else { %> 
+        <p>Utilisateur inconnu (oidc nécessaire)</p>
+      <% }%> 
+      <a href="/logout">LogOut</a>
+    <% } else { %> 
+      <a href="/login">LogIn</a>
+    <% } %>
+    
+    <br />
+    <a href="/formations">Les formations</a>
+  </body>
+</html>

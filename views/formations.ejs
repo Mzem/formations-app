@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Formations</title>
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <h1>Les formations</h1>
+
+    <% if (data) { %>
+
+    <ul>
+      <% data.forEach(function(formation) { %>
+      <li><%= formation.nom %></li>
+      <% }); %>
+    </ul>
+
+    <% } else { %> 
+      <p>vous devez <a href="/login">LogIn</a> pour voir les données</p>
+    <% } %>
+  </body>
+</html>
